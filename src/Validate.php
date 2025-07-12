@@ -13,7 +13,7 @@
 
 declare( strict_types=1 );
 
-namespace ArrayPress\WPValidation;
+namespace ArrayPress\SanitizeUtils;
 
 use DateTime;
 
@@ -251,7 +251,7 @@ class Validate {
 	 */
 	public static function phone( string $phone ): bool {
 		// Basic phone validation - adjust pattern as needed
-		return (bool) preg_match( '/^[\+]?[0-9\s\-\(\)]{7,15}$/', $phone );
+		return (bool) preg_match( '/^[+]?[0-9\s\-()]{7,15}$/', $phone );
 	}
 
 	/**

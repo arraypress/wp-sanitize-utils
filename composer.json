@@ -1,10 +1,10 @@
 {
-  "name": "arraypress/wp-clean-utils",
+  "name": "arraypress/wp-sanitize-utils",
   "version": "1.0.0",
   "description": "A lean WordPress library for sanitization and validation utilities",
   "type": "library",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://github.com/arraypress/wp-clean-utils/",
+  "homepage": "https://github.com/arraypress/wp-sanitize-utils/",
   "authors": [
     {
       "name": "David Sherlock",
@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ArrayPress\\CleanUtils\\": "src/"
+      "ArrayPress\\SanitizeUtils\\": "src/"
     }
   },
   "config": {
@@ -27,8 +27,8 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "support": {
-    "issues": "https://github.com/arraypress/wp-clean-utils/issues",
-    "source": "https://github.com/arraypress/wp-clean-utils"
+    "issues": "https://github.com/arraypress/wp-sanitize-utils/issues",
+    "source": "https://github.com/arraypress/wp-sanitize-utils"
   },
   "keywords": [
     "wordpress",

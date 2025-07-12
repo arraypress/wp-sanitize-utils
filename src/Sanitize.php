@@ -5,7 +5,7 @@
  * Provides comprehensive utility functions for sanitizing various data types in WordPress.
  * Leverages WordPress core functions while adding additional functionality for common use cases.
  *
- * @package ArrayPress\CleanUtils
+ * @package ArrayPress\SanitizeUtils
  * @since   1.0.0
  * @author  ArrayPress
  * @license GPL-2.0-or-later
@@ -13,7 +13,7 @@
 
 declare( strict_types=1 );
 
-namespace ArrayPress\CleanUtils;
+namespace ArrayPress\SanitizeUtils;
 
 /**
  * Sanitize Class
@@ -491,7 +491,7 @@ class Sanitize {
 		}
 
 		// Remove anything that's not a number, period, or negative sign
-		$amount = preg_replace( '/[^0-9\.\-]/', '', $amount );
+		$amount = preg_replace( '/[^0-9.\-]/', '', $amount );
 
 		// Convert to float
 		$amount = (float) $amount;
