@@ -92,7 +92,7 @@ class Validate {
 	 *
 	 * @param mixed $value The value to validate.
 	 *
-	 * @return bool True if float, false otherwise.
+	 * @return bool True if a float, false otherwise.
 	 */
 	public static function float( $value ): bool {
 		return filter_var( $value, FILTER_VALIDATE_FLOAT ) !== false;
@@ -250,8 +250,7 @@ class Validate {
 	 * @return bool True if valid format, false otherwise.
 	 */
 	public static function phone( string $phone ): bool {
-		// Basic phone validation - adjust pattern as needed
-		return (bool) preg_match( '/^[+]?[0-9\s\-()]{7,15}$/', $phone );
+		return (bool) preg_match( '/[^0-9+\-() ]/', $phone );
 	}
 
 	/**
